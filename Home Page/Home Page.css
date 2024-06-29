@@ -1,0 +1,240 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.layar-dalam {
+    width: 1000px;
+    margin: auto;
+}
+.layar-penuh {
+    width: 100%;
+}
+nav {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+nav.putih {
+    background-color: #fff;
+}
+nav .logo {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+}
+nav .logo img {
+    width: 200px;
+    vertical-align: middle;
+}
+nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav .menu ul li {
+   list-style-type: none; 
+   line-height: 60px;
+   float: left;
+}
+nav ul li a {
+    color: white;
+    text-align: center;
+    padding: 0 16px 0 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Pengaturan Header */
+
+header {
+    background: url(../Background\ \(Home\ Page\).jpg);
+    background-position: center;
+    /* background-attachment: fixed; */
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+header .intro {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+header .intro h3 {
+    font-size: 50px;
+    margin: 0;
+    padding: 5px;
+}
+.tombol {
+    background-color: rgb(35, 163, 199);
+    height: 40px;
+    line-height: 42px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+    z-index: -1;
+}
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.tombol-menu .garis {
+    height: 3px;
+    background-color: #fff;
+}
+section {
+    padding: 50px 0 50px 0;
+}
+section h3 {
+    font-size: 30px;
+}
+section h3::after {
+    content: "";
+    border-bottom: 5px solid #c86b85;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+}
+#AboutUs {
+    text-align: center;
+}
+section p.ringkasan {
+    font-style: italic;
+    font-size: 18px;
+    color: #ababab;
+}
+section .konten-isi p {
+    font-style: normal;
+}
+nav.putih .tombol-menu .garis {
+    background-color: #333;
+}
+nav .logo img.hitam {
+    display: none;
+}
+nav.putih ul li a {
+    color: #333;
+}
+section.abu-abu {
+    background-color: #f6f6f6;
+}
+.Support {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.Support h6 {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.Support img {
+    width: 50px;
+}
+.Support div {
+    text-align: center;
+    width: 26%;
+}
+section#Gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+    overflow: scroll;
+}
+section#Gallery div{
+    padding: 10px;
+}
+section#Gallery div img {
+    height: 100px;
+    border-radius: 5px;
+}
+section#Gallery div img:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+section.quote {
+    background: url(../Logo\ Angkatan\ \(Home\ Page\).png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-style: italic;
+    padding: 100px;
+}
+
+@media screen and (max-width: 991.98px) {
+    .layar-dalam {
+        width: 90%;
+    }
+    nav .menu ul {
+        display: none;
+        margin-top: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    nav .menu ul li {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        background-color: #fff;
+        line-height: 40px;
+    }
+    nav .menu ul li a {
+        color: #333;
+    }
+    .tombol-menu {
+        display: flex;
+    }
+}
